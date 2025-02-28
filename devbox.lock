@@ -1,0 +1,92 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "resolved": "github:NixOS/nixpkgs/3a05eebede89661660945da1f151959900903b6a?lastModified=1740547748&narHash=sha256-Ly2fBL1LscV%2BKyCqPRufUBuiw%2BzmWrlJzpWOWbahplg%3D"
+    },
+    "jdk@21": {
+      "last_modified": "2025-02-07T11:26:36Z",
+      "resolved": "github:NixOS/nixpkgs/d98abf5cf5914e5e4e9d57205e3af55ca90ffc1d#jdk",
+      "source": "devbox-search",
+      "version": "21.0.5+11",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/37sc8vl49phfl54qyqlz2hlm2xm5kn0b-openjdk-21.0.5+11",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/y4c7gkd3w1bbzgfnrkrfbpqxw1g85h38-openjdk-21.0.5+11-debug"
+            }
+          ],
+          "store_path": "/nix/store/37sc8vl49phfl54qyqlz2hlm2xm5kn0b-openjdk-21.0.5+11"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jqc9khwn11pmd9b8b2gxb8fcfknd4r67-openjdk-21.0.5+11",
+              "default": true
+            },
+            {
+              "name": "debug",
+              "path": "/nix/store/q4wqrzccclqzxb7aqb9yyxf8czggkdbi-openjdk-21.0.5+11-debug"
+            }
+          ],
+          "store_path": "/nix/store/jqc9khwn11pmd9b8b2gxb8fcfknd4r67-openjdk-21.0.5+11"
+        }
+      }
+    },
+    "maven@latest": {
+      "last_modified": "2025-02-07T11:26:36Z",
+      "resolved": "github:NixOS/nixpkgs/d98abf5cf5914e5e4e9d57205e3af55ca90ffc1d#maven",
+      "source": "devbox-search",
+      "version": "3.9.9",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5z2wawykivspwmkk95lm49rs3njjkaf4-maven-3.9.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5z2wawykivspwmkk95lm49rs3njjkaf4-maven-3.9.9"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3cl7bdqhh3252xr2dpk58z6qnrkphc5r-maven-3.9.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3cl7bdqhh3252xr2dpk58z6qnrkphc5r-maven-3.9.9"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/c11804c4bl53i4i45frh6khcxknz8ay8-maven-3.9.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/c11804c4bl53i4i45frh6khcxknz8ay8-maven-3.9.9"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ymghzapfm79ailw4xq0aabsnlz8rqw61-maven-3.9.9",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ymghzapfm79ailw4xq0aabsnlz8rqw61-maven-3.9.9"
+        }
+      }
+    }
+  }
+}
