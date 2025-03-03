@@ -1,4 +1,4 @@
-package org.vaadin.example;
+package de.zilly.feedreader;
 
 import java.io.Serializable;
 import org.springframework.stereotype.Service;
