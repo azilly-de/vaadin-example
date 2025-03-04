@@ -15,6 +15,7 @@ import org.apache.commons.validator.routines.UrlValidator;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @PageTitle("Simple Feed Reader")
@@ -38,6 +39,13 @@ public class FeedView extends VerticalLayout {
 
         grid.setHeight("100%");
         grid.addComponentColumn(item -> createFeedCard(item));
+        grid.addItemClickListener(event -> {
+            Optional.of(event.getItem())
+                    .filter(i -> StringUtils.isNotEmpty(i.getUrl()))
+                    .ifPresent(i -> {
+                        getUI().ifPresent(ui -> ui.getPage().open(i.getUrl(), "_blank"));
+                    });
+        });
         add(feedUrlField, loadButton, grid);
     }
 
